@@ -1,0 +1,6 @@
+print("Tervetuloa peliin!")
+nimi = input("Mikä on nimesi? ")
+ikä = int(input("Kuinka vanha olet? "))
+print("Tiedot:")
+print(f"Nimi: {nimi}")
+print(f"Ikä: {ikä}")
