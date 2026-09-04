@@ -1,0 +1,18 @@
+vuosi = int(input("Anna vuosi:"))
+
+while vuosi % 4 != 0:
+    print("Ei ollut olympiavuosi.")
+    vuosi = int(input("Anna vuosi:"))
+    if vuosi < 1896 and vuosi % 4 == 0:
+        print("Ennen moderneja olympialaisia.")
+        break
+    elif vuosi == 1916 or vuosi == 1940 or vuosi == 1944:
+        print("Olympialaisia ei järjestetty sodan vuoksi.")
+        break
+    elif vuosi == 2020:
+        print("Olympialaiset järjestettiin poikkeuksellisesti vuonna 2021.")
+        break
+else:
+    print("Vuosi oli olympiavuosi.")
+
+
