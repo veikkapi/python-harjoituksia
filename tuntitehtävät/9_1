@@ -1,0 +1,9 @@
+import random
+class Inventaario:
+    def __init__(self):
+        self.loitsut = [""]
+        self.reppu = []
+
+
+
+    
