@@ -32,7 +32,7 @@ Tein tehtävät 1 ja 2.
 
 ## Moduuli 9
 
-Tein tehtävän 1.
+Tein tehtävän 1, 2, 3 ja 4.
 
 ## Moduuli 10
 
