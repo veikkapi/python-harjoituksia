@@ -1,0 +1,12 @@
+while True:
+    try:
+        luku1 = int(input("Anna luku:"))
+        luku2 = int(input("Anna toinen luku:"))
+        jakolasku = luku1 / luku2
+        print(f"Jakolasku: {jakolasku}")
+        break
+    
+    except ValueError:
+        print("Virhe: syötetty arvo ei ole kokonaisluku.")
+    except ZeroDivisionError:
+        print("Virhe: syötetty arvo ei voi olla nolla")

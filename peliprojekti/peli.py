@@ -1,5 +1,6 @@
 print("Tervetuloa peliin!")
 
+#pelaaja tiedot (nimi ja ikä)
 nimi = input("Mikä on nimesi? ")
 
 while nimi == "":
@@ -12,17 +13,18 @@ while ika < 0:
     print("Ikä ei voi olla negatiivinen. Yritä uudelleen.")
     ika = int(input("Kuinka vanha olet? "))
 
-if ika < 12:
+if ika < 18:
     print("Olet liian nuori pelaamaan tätä peliä.")
     print("Peli päättyy, häivy.")
     quit()
 else:
     print("Tiedot talennettu.")
 
+#päävalikko ja komennot
 print("Päävalikko:")
 komento = input("Anna komento: ")
 
-while komento != "lopeta":
+while komento != "aloita":
 
     if komento == "":
         print("Komento ei voi olla tyhjä. Yritä uudelleen.")
@@ -30,12 +32,14 @@ while komento != "lopeta":
         komento = input("Anna komento: ")
 
     elif komento == "komennot":
+        print("--------------------")
         print("Komennot:")
         print("komennot - näyttää komennot")
-        print("lopeta - jatkaa peliä")
+        print("aloita - aloittaa pelin")
         print("poistu - keskeyttää pelin")
         print("yllätys - et uskalla")
         print("tiedot - näyttää tietosi")
+        print("--------------------")
         komento = input("Anna komento: ")
 
 
@@ -57,5 +61,22 @@ while komento != "lopeta":
         print("Tuntematon komento. Yritä uudelleen.")
         komento = input("Anna komento: ")
 
-print("Aloitetaan peli!")
+#tästä alkaa itse peli
 
+print("--------------------")
+print("Intro:")
+print("")
+
+tavarat = []
+tavara = input("Mitä pakataan? (tyhjä lopettaa):")
+
+while tavara != "":
+
+    if tavara not in tavarat:
+        print(f"{tavara} on nyt pakattu.")
+
+    if tavara in tavarat:
+        print("Tämä on pakattu jo.")
+
+    tavarat.append(tavara)
+    tavara = input("Mitä pakataan? (tyhjä lopettaa):")
