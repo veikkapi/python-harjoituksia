@@ -67,16 +67,32 @@ print("--------------------")
 print("Intro:")
 print("")
 
-tavarat = []
-tavara = input("Mitä pakataan? (tyhjä lopettaa):")
+# pelaajan luonti, liikkuminen, esineiden kerääminen ja näyttäminen
 
-while tavara != "":
+class Pelaaja:
+    def __init__(self, nimi, sijainti):
+        self.nimi = nimi
+        self.esineet = []
+        self.sijainti = sijainti
 
-    if tavara not in tavarat:
-        print(f"{tavara} on nyt pakattu.")
+    def liiku(self, huone):
+        self.sijainti = huone
+        print(f"Siirryit huoneeseen: {huone.nimi}")
 
-    if tavara in tavarat:
-        print("Tämä on pakattu jo.")
+    def kerää_esine(self, esine):
+        if esine in self.sijainti.esineet:
+            self.sijainti.poista_esine(esine)
+            self.esineet.append(esine)
+            print(f"Keräsit esineen: {esine.nimi}")
+        else:
+            print("Tässä huoneessa ei ole kyseistä esinettä.")
 
-    tavarat.append(tavara)
-    tavara = input("Mitä pakataan? (tyhjä lopettaa):")
+    def nayta_esineet(self):
+        if not self.esineet:
+            print("Sinulla ei ole esineitä.")
+        else:
+            print("Hallussasi olevat esineet:")
+            for esine in self.esineet:
+                print(f"- {esine}")
+
+
