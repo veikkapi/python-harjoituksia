@@ -1,21 +1,21 @@
-# peli
+# Peliprojekti
 
 **Veikka Pietiäinen**
 
-## Tehdyt vaiheet
-Projekti 1. Ohjelmointiprojektitehtävän aloitus
-Projekti 2. Päävalikko
-Projekti 3. Päävalikon toiminnto ja "inventaario"
+## Juoni
 
-## Kesken/Melkein valmis
+Syysloma yllättää etkä ole kiireisen arjen takia kerennyt suunnittelemaan mitään.
+Kova työ on kuitenkin palkittava, joten nyt on aika lähteä!
 
-Projekti 4. - Rakenne kuntoon ja oliot käyttöön
+## KESTÄVÄ KEHITYS:
 
-Tein "pelaaja" -luokan ja sen mahdollisuuden kerätä esineitä sekä näyttämään listan kerätyistä esineistä.
-Tein myös funktion, jolla pelaajaa voi liikkua huoneesta toiseen (heti kun olen luonut ne xd).
-En ole vielä jatkanut sen enempää, sillä en ole vielä päättänyt pelin juonesta.
+Pelin teema on suunniteltu kestävän kehityksen tavoite 13.3 ympärille, joka kuulu näin:
 
-## Tekemättä
+"Parantaa ilmastonmuutoksen hidastamiseen, sopeutumiseen, vaikutusten lievittämiseen
+ja ennakkovaroituksiin liittyvää koulutusta, tietämyksen lisäämistä
+sekä kansalaisten ja instituutioiden valmiuksia."
 
-Projekti 5.
+Pelin tavoitteena on tuoda esiin matkustamisen ja lomamatkojen aiheutumat haitalliset päästöt.
+Tavoitteena ei ole kuitenkaan kokonaan kieltää lomailu vaan saada ihmiset olemaan harkitsevaisempia
+valitsemistaan matkailutavoista ja vähentämään ympäristölle sekä ilmastolle haitallisia CO2-päästöjä.
 

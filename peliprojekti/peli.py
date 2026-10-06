@@ -1,4 +1,7 @@
-print("Tervetuloa peliin!")
+import json
+
+def poikkiviiva(): #kävi raskaaksi kirjoittaa samaa koodia uudestaan ja uudestaan, joten tein funtion
+    print("--------------------")
 
 #pelaaja tiedot (nimi ja ikä)
 nimi = input("Mikä on nimesi? ")
@@ -13,7 +16,7 @@ while ika < 0:
     print("Ikä ei voi olla negatiivinen. Yritä uudelleen.")
     ika = int(input("Kuinka vanha olet? "))
 
-if ika < 18:
+if ika < 12:
     print("Olet liian nuori pelaamaan tätä peliä.")
     print("Peli päättyy, häivy.")
     quit()
@@ -21,6 +24,7 @@ else:
     print("Tiedot talennettu.")
 
 #päävalikko ja komennot
+poikkiviiva()
 print("Päävalikko:")
 komento = input("Anna komento: ")
 
@@ -32,14 +36,14 @@ while komento != "aloita":
         komento = input("Anna komento: ")
 
     elif komento == "komennot":
-        print("--------------------")
+        poikkiviiva()
         print("Komennot:")
         print("komennot - näyttää komennot")
         print("aloita - aloittaa pelin")
         print("poistu - keskeyttää pelin")
         print("yllätys - et uskalla")
         print("tiedot - näyttää tietosi")
-        print("--------------------")
+        poikkiviiva()
         komento = input("Anna komento: ")
 
 
@@ -61,38 +65,25 @@ while komento != "aloita":
         print("Tuntematon komento. Yritä uudelleen.")
         komento = input("Anna komento: ")
 
-#tästä alkaa itse peli
-
-print("--------------------")
-print("Intro:")
-print("")
-
-# pelaajan luonti, liikkuminen, esineiden kerääminen ja näyttäminen
+# luokat
 
 class Pelaaja:
-    def __init__(self, nimi, sijainti):
+    def __init__(self, nimi, ika, sijainti):
         self.nimi = nimi
-        self.esineet = []
+        self.ika = ika
         self.sijainti = sijainti
+        self.saldo = 1000
+        self.päästöt = 0
 
-    def liiku(self, huone):
-        self.sijainti = huone
-        print(f"Siirryit huoneeseen: {huone.nimi}")
+class Paikka:
+    pass
 
-    def kerää_esine(self, esine):
-        if esine in self.sijainti.esineet:
-            self.sijainti.poista_esine(esine)
-            self.esineet.append(esine)
-            print(f"Keräsit esineen: {esine.nimi}")
-        else:
-            print("Tässä huoneessa ei ole kyseistä esinettä.")
+# pelaajan luonti
 
-    def nayta_esineet(self):
-        if not self.esineet:
-            print("Sinulla ei ole esineitä.")
-        else:
-            print("Hallussasi olevat esineet:")
-            for esine in self.esineet:
-                print(f"- {esine}")
+pelaaja = Pelaaja(nimi, ika, "koti")
+#tästä alkaa itse peli
 
-
+poikkiviiva()
+with open("peliprojekti/intro.txt", "r") as f:
+    intro = f.read()
+    print(intro)
