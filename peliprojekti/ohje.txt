@@ -3,6 +3,7 @@ OHJEET:
 - Peli alkaa valitsemalla lomakohteen tietyistä vaihtoehdoista.
 - Valitsemaasi lomakohteeseen on eri tapoja matkustaa, joilla on hintansa ja päästönsä.
 - Pelin tavoitteena ja voittoehtona on saavuttaa lomakohde budjetin rajoissa.
+- Jos ylittää budjetin, häviää pelin.
 - Pelin läpäistyä saat arvosanan, joka määräytyy tehtyjen päästöjen määrästä.
-- Mitä vähempi sitä parempi.
-
+- Mitä vähempi sitä parempi arvosana.
+- Onnea pelaamiseen!

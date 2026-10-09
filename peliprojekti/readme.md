@@ -4,10 +4,11 @@
 
 ## Juoni
 
-Syysloma yllättää etkä ole kiireisen arjen takia kerennyt suunnittelemaan mitään.
+Syysloma yllättää etkä ole kiireisen arjen takia kerennyt suunnittelemaan mitään ihmeellistä.
 Kova työ on kuitenkin palkittava, joten nyt on aika lähteä!
+Varo ettet kuitenkaan ylitä budjettiasi.
 
-## KESTÄVÄ KEHITYS:
+## Kestävä kehitys pelissä
 
 Pelin teema on suunniteltu kestävän kehityksen tavoite 13.3 ympärille, joka kuulu näin:
 
@@ -18,4 +19,3 @@ sekä kansalaisten ja instituutioiden valmiuksia."
 Pelin tavoitteena on tuoda esiin matkustamisen ja lomamatkojen aiheutumat haitalliset päästöt.
 Tavoitteena ei ole kuitenkaan kokonaan kieltää lomailu vaan saada ihmiset olemaan harkitsevaisempia
 valitsemistaan matkailutavoista ja vähentämään ympäristölle sekä ilmastolle haitallisia CO2-päästöjä.
-
